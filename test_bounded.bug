@@ -1,0 +1,7 @@
+assume 0 <= k
+assume k <= 100
+assume 0 <= x
+while x < k {
+  x = x + 1
+  assert (x <= 100)
+}

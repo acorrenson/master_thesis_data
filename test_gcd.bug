@@ -1,0 +1,12 @@
+assume a > 0
+assume b > 0
+while (a != b) {
+  old_a = a
+  old_b = b
+  if (a > b) {
+    a = a - b
+  } else {
+    b = b + a
+  }
+  assert (a + b < old_a + old_b)
+}
